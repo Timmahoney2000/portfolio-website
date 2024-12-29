@@ -1,5 +1,9 @@
 14:35
 
+https://tailwindcss.com/docs/guides/vite
+
+https://react-icons.github.io/react-icons/search/#q=close
+
 
 # React + Vite
 
