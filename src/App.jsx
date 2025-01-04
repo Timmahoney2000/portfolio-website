@@ -2,6 +2,7 @@
 
 import React from "react";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
 import Hero from "./components/Hero";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <div className="text-red-300">
       <Navbar />
       <Hero />
+      <About />
     </div>
   );
 };
