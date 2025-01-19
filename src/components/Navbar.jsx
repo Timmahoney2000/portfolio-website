@@ -16,18 +16,18 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-yellow-50 text-black w-full">
+    <div className="bg-blue-500 opacity-85 text-black w-full">
       <div className="container mx-auto p-4 hidden md:flex justify-between items-center">
         <div className="text-x1 md:text-2x1 font-bold flex items-center gap-1">
           <span className="text-black">Tim</span>
-          <span className="text-yellow-500">Mahoney</span>
+          <span className="text-orange-300">Mahoney</span>
         </div>
 
         <div className="hidden md:flex space-x-6 items-center list-none text-lg">
           {items.map(({ id, text }) => (
             <li
               key={id}
-              className="hover:text-yellow-500 duration-200 cursor-pointer"
+              className="hover:text-orange-500 duration-200 cursor-pointer"
             >
               {text}
             </li>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <a
           href={CV}
           download="cv.pdf"
-          className="text-lg bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-400"
+          className="text-lg bg-orange-500 text-black px-4 py-2 rounded hover:bg-orange-400"
         >
           Download CV
         </a>
@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center md:hidden p-2 shadow-sm">
         <div className="text-xl font-bold flex items-center gap-2">
           <span className="text-black">Tim</span>
-          <span className="text-yellow-500">Mahoney</span>
+          <span className="text-orange-500">Mahoney</span>
         </div>
         <div className="flex justify-center items-center gap-2">
           <div onClick={() => setMenu(!menu)}>
@@ -58,11 +58,11 @@ const Navbar = () => {
       </div>
 
       {menu && (
-        <div className="md:hidden bg-yellow-50 py-6 justify-center items-center gap-2 text-lg text-black flex flex-col list-none shadow-sm">
+        <div className="md:hidden bg-orange-50 py-6 justify-center items-center gap-2 text-lg text-black flex flex-col list-none shadow-sm">
           {items.map(({ id, text }) => (
             <li
               key={id}
-              className="hover:text-yellow-500 duration-200 cursor-pointer border-b w-11/12"
+              className="hover:text-orange-500 duration-200 cursor-pointer border-b w-11/12"
             >
               {text}
             </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
           <a
             href={CV}
             download="cv.pdf"
-            className="text-lg bg-yellow-500 text-black px-4 py-2 mt-3 rounded hover:bg-yellow-400"
+            className="text-lg bg-orange-500 text-black px-4 py-2 mt-3 rounded hover:bg-orange-400"
           >
             Download CV
           </a>
